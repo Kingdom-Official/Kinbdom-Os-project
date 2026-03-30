@@ -1,103 +1,76 @@
-# 👑 Kingdom OS
+# Kingdom OS 👑
 
-> A complete Linux-based desktop operating system — built by a 12-year-old developer from India.
+Built by Vihaan — 12 years old, Asia.
 
-[![License](https://img.shields.io/badge/license-Proprietary-gold)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-gold)](releases)
-[![Kernel](https://img.shields.io/badge/kernel-Linux%206.6.30%20LTS-blue)](kernel)
-[![Built by](https://img.shields.io/badge/built%20by-Vihaan%2C%20age%2012-gold)](https://github.com/Kingdom-Official)
+Kingdom OS is a real, fully original desktop operating system that I have been building since February 2025. No team. No funding. No adults writing the code. Just me, a Raspberry Pi 4, a Lenovo laptop, and months of non-stop work after school and through the night.
+
+This is not a concept. This is not a project for school. This is a real operating system that boots on any PC, has a full desktop environment, built-in applications, hardware driver support, and a live international activation server. I built it to sell.
 
 ---
 
-## What is Kingdom OS?
+## The Story
 
-Kingdom OS is a real, installable Linux-based operating system with:
+I started Kingdom OS because I wanted to prove that a kid from Asia could build and sell a real operating system. Not a fake one. Not a reskin. A real one — with its own desktop UI, its own kernel configuration, its own sound theme, its own wallpapers, its own activation system, and its own anti-piracy protection.
 
-- **Original desktop UI** — gold and dark theme, not macOS, not Windows
-- **Worldwide activation server** running on Raspberry Pi 4
-- **25-digit product keys** — format changes every 10,000 buyers automatically
-- **Anti-piracy protection** — OS crashes if server is offline by design
-- **All hardware drivers** — WiFi, GPU, Bluetooth, USB, Ethernet, Printer
-- **25 built-in apps** — Files, Terminal, Browser, Music, Code Editor, and more
-- **Linux 6.6.30 LTS kernel**
-- **Ubuntu 22.04 base** with Red Hat (Rocky Linux 9) compatibility
-- **Boot splash, GTK theme, custom sounds**
-- **7-day free trial** built in
+Every single component of Kingdom OS is fully original. The desktop interface, the server, the activation flow, the installer, the boot splash, the GTK theme, the sounds — nothing was copied, nothing was borrowed from another OS. It was all designed and built from scratch.
+
+---
+
+## How It Works
+
+Kingdom OS runs on any x86_64 PC. It can be booted live from a USB drive or installed permanently to a hard drive. On first boot, the user enters a product key purchased from Kingdom Systems. The key is verified against a live activation server running 24/7 on a Raspberry Pi 4. Once activated, the OS never asks again — activation is silent and happens in the background on every subsequent boot.
+
+The entire system is encrypted and server-connected by design. Every component communicates with the Kingdom Systems server. This is the architecture of Kingdom OS — engineered intentionally for security and authenticity.
+
+---
+
+## The Hardware Behind It
+
+The Kingdom OS activation server runs 24/7 on a Raspberry Pi 4 with a 126GB USB drive. It is connected to the internet via a Cloudflare Tunnel, meaning it is accessible from anywhere in the world. The server handles product key generation, activation, license verification, software update delivery, and admin controls. Status lights are powered by three Raspberry Pi Picos and a NodeMCU ESP8266, connected via USB hubs.
+
+---
+
+## Encryption and Security
+
+All code, assets, server communication, license data, and system components of Kingdom OS are fully encrypted. Decryption is not permitted. Reverse engineering, decompiling, disassembling, or inspecting any part of Kingdom OS in any form is strictly prohibited.
 
 ---
 
 ## Pricing
 
-| Edition | Price (USD) | Price (INR) | PCs |
-|---------|-------------|-------------|-----|
-| Standard | $99 | ₹8,299 | 1 PC |
-| Pro | $199 | ₹16,599 | 3 PCs |
-| Lifetime | $499 | ₹41,499 | Unlimited |
+Kingdom OS is sold by Kingdom Systems at the following prices:
+
+| Edition | Price (USD) | Price (INR) | What you get |
+|---------|-------------|-------------|--------------|
+| Standard | $99 | ₹8,299 | Full Kingdom OS on 1 PC |
+| Pro | $199 | ₹16,599 | Better performance, priority support, 3 PCs |
+| Ultimate | $499 | ₹41,499 | Maximum performance, all future updates, unlimited PCs |
+
+A 7-day free trial is built into every copy of Kingdom OS.
 
 ---
 
-## Tech Stack
+## About the Developer
 
-- **Desktop UI** — React 18, custom CSS, no libraries
-- **Server** — Node.js 20, Nginx, PM2, Redis, Cloudflare Tunnel
-- **Hardware** — Raspberry Pi 4 (24/7 international server)
-- **OS Base** — Ubuntu 22.04 + Linux 6.6.30 LTS kernel
-- **Microcontrollers** — 3x Pi Pico + 1x NodeMCU ESP8266 (status lights)
-- **Build system** — Bash scripts, debootstrap, squashfs, xorriso
+My name is Vihaan. I am 12 years old and I live in Asia. I started programming two years ago and Kingdom OS is the biggest thing I have ever built. I did not have a team. I did not have money. I did not have anyone telling me what to do. I just had an idea and I built it.
+
+I want Kingdom OS to be a real product that real people buy and use. That is the goal. That has always been the goal.
 
 ---
 
-## Product Key Format
+## License
 
-```
-KGD-XXXX-XXXX-XXXX-XXXX-XXXX  (Standard)
-KPR-XXXX-XXXX-XXXX-XXXX-XXXX  (Pro)
-KLT-XXXX-XXXX-XXXX-XXXX-XXXX  (Lifetime)
-```
+Copyright © 2025 Kingdom Systems — Vihaan. All rights reserved.
 
-Format changes automatically every 10,000 buyers.
+Kingdom OS and every component, file, line of code, design, sound, wallpaper, and asset associated with it are the exclusive intellectual property of Kingdom Systems.
 
----
+No part of this software or its associated materials may be:
+- Copied or reproduced in any form
+- Modified or built upon
+- Distributed or sublicensed
+- Reverse engineered or decrypted
+- Used commercially or personally without purchase
 
-## Architecture
+Unauthorized use, reproduction, or distribution of Kingdom OS constitutes a violation of international copyright law.
 
-```
-Customer buys → Admin generates key → Customer enters key on first boot
-→ Pi4 server verifies → OS activates → Never asks again
-→ Silent background check every boot → If Pi4 offline → OS crashes (anti-piracy)
-```
-
----
-
-## Built By
-
-**Vihaan** — 12 years old, India 🇮🇳
-
-Started building Kingdom OS in February 2025. No team, no budget, no adults helping with code. Just a MacBook, a Raspberry Pi 4, a Lenovo IdeaPad, and a vision.
-
-> "I want to sell a real OS for $99 that people actually use."
-
----
-
-## Company
-
-**Kingdom Systems** © 2025. All rights reserved.
-
-Kingdom OS, the Kingdom crown logo, and all associated software, code, designs, sounds, wallpapers, and documentation are the intellectual property of Kingdom Systems.
-
-**No part of Kingdom OS may be copied, modified, distributed, or used without explicit written permission from Kingdom Systems.**
-
----
-
-## Copyright Notice
-
-```
-Copyright © 2025 Kingdom Systems (Vihaan)
-All Rights Reserved.
-
-This software is proprietary and confidential.
-Unauthorized copying, modification, distribution, or use
-of this software, via any medium, is strictly prohibited.
-
-Kingdom OS™ is a trademark of Kingdom Systems.
-```
+For licensing inquiries contact Kingdom Systems directly.
